@@ -1,0 +1,5 @@
+sample_id,plate,wells,gem_well,description
+WT_control,A,A01:A06,1,Wild-type iPSC-neurons
+TDP43_KD,A,A07:A12,1,TDP-43 knockdown
+MAPT_KO,A,B01:B06,2,MAPT knockout
+APP_OE,A,B07:B12,2,APP overexpression
