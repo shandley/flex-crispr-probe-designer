@@ -174,10 +174,12 @@ def design_junction_probe(
     junction_rc = reverse_complement(junction)
     gc = gc_content(junction)
 
-    if probe_type == "inclusion":
-        desc = f"{gene} cryptic exon inclusion junction probe"
-    else:
+    if "inclusion" in probe_type:
+        desc = f"{gene} cryptic exon inclusion junction probe ({probe_type})"
+    elif probe_type == "skipping":
         desc = f"{gene} exon skipping junction probe (CE absent)"
+    else:
+        desc = f"{gene} junction probe ({probe_type})"
 
     return CrypticExonProbe(
         gene=gene,
