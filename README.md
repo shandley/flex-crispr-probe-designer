@@ -8,7 +8,7 @@ Takes a guide library CSV and generates everything needed for a Flex v2 CRISPR s
 
 ```bash
 # Requires Python 3.12+ and uv
-git clone https://github.com/YOUR_ORG/flex-crispr-probe-designer.git
+git clone https://github.com/shandley/flex-crispr-probe-designer.git
 cd flex-crispr-probe-designer
 uv sync
 ```
