@@ -20,9 +20,12 @@ def _build_pattern(scaffold: ScaffoldType, custom: CustomScaffold | None = None)
     spacer barcode in Read 2. For Flex CRISPR, this is:
       scaffold_RC + TAAAC_linker + (BC)
 
-    Verified against 10X's own feature reference from the 1.2M K562 Flex
-    CRISPR dataset, where the pattern is:
+    The preferred scaffold pattern has been verified against 10X's own
+    feature reference from the 1.2M K562 Flex CRISPR dataset:
       GCTATGCTGTTTCCAGCTTAGCTCTTAAAC(BC)
+
+    The A>T substitution and custom scaffold patterns follow the same
+    construction logic but have not been verified against real data.
     """
     if scaffold == ScaffoldType.CUSTOM:
         if custom is None:

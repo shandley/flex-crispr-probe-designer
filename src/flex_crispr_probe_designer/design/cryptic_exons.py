@@ -5,7 +5,12 @@ cryptic exon and the partner sits in the flanking constitutive exon.
 Enables detection of cryptic exon inclusion at single-cell resolution.
 
 Coordinates are GRCh38/hg38. These cryptic exons are NOT in standard
-GENCODE annotations — they are only included upon TDP-43 loss of function.
+GENCODE annotations -- they are only included upon TDP-43 loss of function.
+
+Sequence availability:
+- STMN2, UNC13A: pre-fetched hg38 sequences in cryptic_exon_sequences.py
+- HDGFL2, KALRN, SYT7: metadata only (coordinates and references).
+  Sequences must be fetched from UCSC Genome Browser before probe design.
 """
 
 from pydantic import BaseModel
